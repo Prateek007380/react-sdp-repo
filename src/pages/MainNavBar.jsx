@@ -10,11 +10,12 @@ import './style.css';
 
 const MainNavBar = () => {
   return (
+    <div>
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/" className="logo-link">
-             KL Event Management System - 2500032264
+            Event Management System
           </Link>
         </div>
         <ul className="nav-menu">
@@ -56,10 +57,10 @@ const MainNavBar = () => {
             </ul>
           </li>
         </ul>
-        </div>
-        <div>
+      </div>
+    </nav>
 
-        <Routes>
+<Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/registration" element={<Registration />} />
@@ -68,10 +69,8 @@ const MainNavBar = () => {
         <Route path="/customer-login" element={<CustomerLogin />} />
       </Routes>
 
-      </div>
-    </nav>
 
-
+    </div>
 
   );
 };
